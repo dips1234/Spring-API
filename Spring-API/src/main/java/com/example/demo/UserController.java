@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/users", produces = "application/json")
 public class UserController {
 
-	@GetMapping
+	@GetMapping(value="/",produces="application/json")
 	public List<String> getUsers(){
 		List<String> names=new ArrayList<String>();
 		names.add("John");
